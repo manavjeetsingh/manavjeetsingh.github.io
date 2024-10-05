@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: monospace, Arial, Helvetica, sans-serif, sans-serif;
     line-height: 1.6;
 }
 
@@ -17,7 +17,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 header p {
@@ -72,6 +72,22 @@ footer {
     margin-top: 2rem;
 }
 
+.image-cropper {
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+img {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    float:right;
+}
+
 a {
     color: #333;
     text-decoration: none;
@@ -80,6 +96,28 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+    padding-top: 2.5em;
+}
+
+.column-right {
+    float:right;
+    text-align: right;
+    width: 15em;
+    height: 15em;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -95,5 +133,15 @@ a:hover {
     .container {
         width: 100%;
         padding: 0 1rem;
+    }
+
+    .column-right {
+        /* float:right;
+        text-align: right; */
+        width: 7em;
+        height: 7em;
+        /* position: relative;
+        overflow: hidden;
+        border-radius: 100%; */
     }
 }
