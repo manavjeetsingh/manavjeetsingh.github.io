@@ -10,7 +10,8 @@ body {
 }
 
 header {
-    background: #333;
+    background-image: url("../pictures/street.jpg");
+    /* background: #333; */
     color: #fff;
     padding: 1rem 0;
 }
@@ -41,13 +42,9 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding-top: 100px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
 
 section {
     padding: 2rem 0;
@@ -72,23 +69,16 @@ footer {
     margin-top: 2rem;
 }
 
-.image-cropper {
-    width: 15rem;
-    height: 15rem;
-    position: absolute;
-    overflow: hidden;
-    border-radius: 50%;
-  }
+
   
 img {
-    display: block;
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
-    float:right;
+    height: auto;
+    padding: 1%;
 
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(50%);
+    /* float:center; */
+
+
+    /* object-fit: cover */
   
 }
 
@@ -101,25 +91,34 @@ a:hover {
     text-decoration: underline;
 }
 
-.row {
-    display: flex;
-}
-  
-.column {
-    flex: 50%;
-    padding-top: 2.5em;
-}
 
-.column-right {
-    float:right;
-    text-align: right;
-    width: 15em;
-    height: 15em;
-    position: relative;
+.profile-img {
     overflow: hidden;
-    border-radius: 100%;
+    border-radius: 20%;
+    -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(30%);
 }
 
+.white {
+    color: rgb(205, 220, 255);
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    
+
+}
+
+.blur {
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 1%;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
 
 
 
@@ -134,18 +133,7 @@ a:hover {
         margin: 10px 0;
     }
 
-    .container {
-        width: 100%;
-        padding: 0 1rem;
-    }
-
-    .column-right {
-        /* float:right;
-        text-align: right; */
-        width: 7em;
-        height: 7em;
-        /* position: relative;
-        overflow: hidden;
-        border-radius: 100%; */
-    }
+    .profile-img {
+        height: 7rem;
+    }    
 }
