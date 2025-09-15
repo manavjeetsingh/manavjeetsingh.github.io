@@ -1,0 +1,178 @@
+/* Basic Reset and Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray for text */
+    background-color: #f4f7f6; /* Light gray background */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #2c3e50; /* A dark blue-gray for headings */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Reusable section styling for consistency */
+.content-section {
+    padding: 60px 0;
+}
+
+/* Header and Navigation */
+.site-header {
+    background-color: #34495e; /* A professional dark blue */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.site-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #fff;
+}
+
+.site-header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.site-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+    color: #1abc9c; /* A vibrant green for hover effect */
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid #bdc3c7; /* A subtle gray border */
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+        gap: 40px;
+    }
+
+    .profile-photo {
+        flex-shrink: 0;
+        margin-bottom: 0;
+    }
+}
+
+/* Card Styling for Experience and Research */
+.card {
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card .dates {
+    font-style: italic;
+    color: #666;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+/* General list styling */
+.publications-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publications-section li {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: flex-start;
+}
+
+.pdf-link {
+    font-weight: 700;
+    color: #c0392b; /* A distinct red for PDF links */
+    text-decoration: none;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.pdf-link:hover {
+    text-decoration: underline;
+}
+
+.citation-text {
+    flex-grow: 1;
+}
+
+/* Contact Section */
+.contact-info {
+    font-size: 1.1em;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.linkedin-link, .google-scholar-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.linkedin-link:hover, .google-scholar-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #34495e;
+    color: #bdc3c7;
+    font-size: 0.9em;
+}
