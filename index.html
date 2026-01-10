@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,49 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <style>
-        /* Reduce padding on the main header and footer */
-        .site-header, .site-footer {
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
 
-        /* Reduce vertical padding for each content section */
-        .content-section {
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
 
-        /* Reduce space below headings */
-        h1, h2, h3 {
-            margin-bottom: 10px;
-        }
-
-        .site-header h1 {
-            margin-bottom: 5px;
-        }
-        
-        /* Reduce space between research/experience cards */
-        .card {
-            margin-bottom: 20px;
-        }
-
-        /* Reduce space below paragraphs and list items for a tighter look */
-        p, ul {
-            margin-top: 0;
-            margin-bottom: 8px;
-        }
-        
-        #publications ul li {
-            margin-bottom: 12px; /* Slightly more space for readability in publications */
-        }
-        
-        .dates {
-            margin-bottom: 8px;
-        }
-
-    </style>
 </head>
 
 <body>
@@ -71,88 +31,140 @@
     </header>
 
     <main>
-        <section id="about" class="content-section">
-            <div class="container">
+        <div class="two-column container">
+            <aside id="about" class="left-col content-section">
                 <div class="about-content">
                     <img src="photos/me2.jpeg" alt="Manavjeet Singh" class="profile-photo">
                     <div class="about-text">
                         <h2>About Me</h2>
-                        <p>I am a Ph.D. Candidate in the Department of Computer Science at Stony Brook University. I am a part of the WINGS lab and am advised by Prof. Samir Das. I broadly work in the areas of edge computing and passive backscatter networks.</p>
+                        <p>I am a Ph.D. Candidate in the Department of Computer Science at Stony Brook University. I am
+                            a part of the WINGS lab and am advised by Prof. Samir Das. I broadly work in the areas of
+                            edge computing and passive backscatter networks and sensing.</p>
+                        <h3>Contact</h3>
+                        <div class="contact-info">
+                            <p>Email: manavsingh at cs.stonybrook.edu</p>
+                            <p><a href="https://linkedin.com/in/manavjeet-singh" class="linkedin-link">LinkedIn</a></p>
+                            <p><a href="https://scholar.google.com/citations?user=PiBb_OMAAAAJ&hl=en"
+                                    class="google-scholar-link">Google Scholar</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </aside>
 
-        <section id="research" class="content-section">
-            <div class="container">
-                <h2>Recent Research Projects</h2>
-                <div class="card">
-                    <h3>Energy-aware localization for passive backscatter tags</h3>
-                    <p class="dates">February 2024 - Present</p>
-                    <p>Using passive backscatter tags for localization is a novel idea, but the lack of an active transceiver makes inter-tag distance measurements ambiguous. This project enabled machine-learning-based unambiguous ranging between passive backscatter tags with a median error of approximately 6.9cm for distances up to 2m. We also achieved a median localization error of less than 2.5 cm with only 12 anchors and proposed a heuristic to measure only high-quality links for localization, resulting in power savings of up to 51% while minimally affecting localization accuracy.</p>
-                </div>
-                <div class="card">
-                    <h3>Benchmarking vision tasks on edge and cloud</h3>
-                    <p class="dates">February 2024 - Present</p>
-                    <p>Real time learning based vision applications involve diverse tasks, ranging from simple object detection to self-driving. Deciding on deployment and execution, whether distributed, monolithic, edge-based, cloud-based, or hybrid, is often not trivial. To aid inecision making, this work strives to provide comprehensive benchmarking for several of the most relevant real-time tasks with multiple state-of-the-art methods</p>
-                </div>
-                <div class="card">
-                    <h3>Collaborative Backscatter in passive backscatter tags</h3>
-                    <p class="dates">January 2023 - July 2024</p>
-                    <p>Passive backscatter is a promising technology for scalable IoT, but it suffers from shorter communication ranges compared to active RF. This work developed methods to allow helper tags to configure their almost-optimal backscatter phase in polynomial time from an exponential search space. Experiments showed a median gain of about 20% with static help and a 3-4x gain with active help from helper tags. This work was accepted at the 2025 IEEE International Conference on RFID.</p>
-                </div>
-                <div class="card">
-                    <h3>Distributed Modular Video Analytics on the edge</h3>
-                    <p class="dates">August 2022 - July 2024</p>
-                    <p>This project improved the accuracy of modular multi-model Video Analytics (VA) pipelines on cheap, low-compute, heterogeneous edge devices to minimize reliance on the cloud. We proposed an application-aware module placement and replication heuristic to maximize throughput and application accuracy. Additionally, we developed an adaptive model selection algorithm for DNN-based VA modules to maximize accuracy in response to varying load conditions. When compared against several baselines in our evaluation, we achieved throughput and accuracy gains of at least 51% and 28%. This work was accepted at the Symposium on Edge Computing 2024 (SEC 2024).</p>
-                </div>
-            </div>
-        </section>
+            <div class="right-col">
+                <section id="research" class="content-section">
+                    <h2>Recent Research Projects</h2>
+                    <div class="scrollable-content">
+                        <div class="card">
+                            <h3>Energy-aware localization for passive backscatter tags</h3>
+                            <p class="dates">February 2024 - Present</p>
+                            <p>Using passive backscatter tags for localization is a novel idea, but the lack of an
+                                active transceiver makes inter-tag distance measurements ambiguous. This project enabled
+                                machine-learning-based unambiguous ranging between passive backscatter tags with a
+                                median error of approximately 6.9cm for distances up to 2m. We also achieved a median
+                                localization error of less than 2.5 cm with only 12 anchors and proposed a heuristic to
+                                measure only high-quality links for localization, resulting in power savings of up to
+                                51% while minimally affecting localization accuracy.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Benchmarking vision tasks on edge and cloud</h3>
+                            <p class="dates">February 2024 - Present</p>
+                            <p>Real time learning based vision applications involve diverse tasks, ranging from simple
+                                object detection to self-driving. Deciding on deployment and execution, whether
+                                distributed, monolithic, edge-based, cloud-based, or hybrid, is often not trivial. To
+                                aid inecision making, this work strives to provide comprehensive benchmarking for
+                                several of the most relevant real-time tasks with multiple state-of-the-art methods</p>
+                        </div>
+                        <div class="card">
+                            <h3>Collaborative Backscatter in passive backscatter tags</h3>
+                            <p class="dates">January 2023 - July 2024</p>
+                            <p>Passive backscatter is a promising technology for scalable IoT, but it suffers from
+                                shorter communication ranges compared to active RF. This work developed methods to allow
+                                helper tags to configure their almost-optimal backscatter phase in polynomial time from
+                                an exponential search space. Experiments showed a median gain of about 20% with static
+                                help and a 3-4x gain with active help from helper tags. This work was accepted at the
+                                2025 IEEE International Conference on RFID.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Distributed Modular Video Analytics on the edge</h3>
+                            <p class="dates">August 2022 - July 2024</p>
+                            <p>This project improved the accuracy of modular multi-model Video Analytics (VA) pipelines
+                                on cheap, low-compute, heterogeneous edge devices to minimize reliance on the cloud. We
+                                proposed an application-aware module placement and replication heuristic to maximize
+                                throughput and application accuracy. Additionally, we developed an adaptive model
+                                selection algorithm for DNN-based VA modules to maximize accuracy in response to varying
+                                load conditions. When compared against several baselines in our evaluation, we achieved
+                                throughput and accuracy gains of at least 51% and 28%. This work was accepted at the
+                                Symposium on Edge Computing 2024 (SEC 2024).</p>
+                        </div>
+                    </div>
+                </section>
 
-        <section id="experience" class="content-section">
-            <div class="container">
-                <h2>Work Experience</h2>
-                <div class="card">
-                    <h3>Research Intern | NEC Labs America</h3>
-                    <p class="dates">June 2025 - August 2025</p>
+                <section id="experience" class="content-section">
+                    <h2>Work Experience</h2>
+                    <div class="card">
+                        <h3>Research Intern | NEC Labs America</h3>
+                        <p class="dates">June 2025 - August 2025</p>
+                        <ul>
+                            <li>Proposed an agentic-AI pipeline to improve LLMs' tool selection and calling using a
+                                hybrid approach. </li>
+                            <li>Evaluated the method on Nestful and BFCLv3 benchmarks, achieving 27% and 3%
+                                improvements, respectively, over direct LLM use (GPT-4o).</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Research Intern | Tata Research Development and Design Centre</h3>
+                        <p class="dates">June 2021 - July 2021</p>
+                        <ul>
+                            <li>Evaluated the security of numerous sign-up interface designs and gathered data from
+                                about 100 web and mobile applications of various categories.</li>
+                            <li>Created an evaluation platform with combinations of selected top interface design
+                                choices to perform A/B testing.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="publications" class="content-section">
+                    <h2>Publications</h2>
                     <ul>
-                        <li>Proposed an agentic-AI pipeline to improve LLMs' tool selection and calling using a hybrid approach. </li>
-                        <li>Evaluated the method on Nestful and BFCLv3 benchmarks, achieving 27% and 3% improvements, respectively, over direct LLM use (GPT-4o).</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Research Intern | Tata Research Development and Design Centre</h3>
-                    <p class="dates">June 2021 - July 2021</p>
-                    <ul>
-                        <li>Evaluated the security of numerous sign-up interface designs and gathered data from about 100 web and mobile applications of various categories.</li>
-                        <li>Created an evaluation platform with combinations of selected top interface design choices to perform A/B testing.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+                        <li><a href="papers/comsnets26_poster.pdf" class="pdf-link">[Poster]</a><span
+                                class="citation-text"><strong>Manavjeet Singh</strong>, Yang Xie, Abeer Ahmad, Milutin
+                                Stanaćević, Samir R Das, Petar M Djurić, "Tag-to-Tag Range Estimation For Passive
+                                Backscatter Tags," International Conference on COMmunication Systems & NETworkS
+                                (COMSNETS) 2026, Bangaluru, India. </span></li>
+                        <li><a href="papers/coba.pdf" class="pdf-link">[PDF]</a><span class="citation-text">Abeer Ahmad,
+                                <strong>Manavjeet Singh</strong>, Yang Xie, Xiao Sha, Milutin Stanaćević, Samir R Das,
+                                Petar M Djurić, "Improving Communication Performance of Passive Backscattering Tags
+                                Using Collaborative Backscatter," 2025 IEEE International Conference on RFID (RFID),
+                                Atlanta, GA, USA. </span></li>
+                        <li><a href="papers/ovida.pdf" class="pdf-link">[PDF]</a><span
+                                class="citation-text"><strong>Manavjeet Singh</strong>, Sri Pramodh Rachuri, Bryan Bo
+                                Cao, Abhinav Sharma, Venkata Bhumireddy, Francesco Bronzino, Samir R Das, Anshul Gandhi,
+                                Shubham Jain, "OVIDA: Orchestrator for Video Analytics on Disaggregated Architecture,"
+                                IEEE/ACM Symposium on Edge Computing (SEC) 2024, Rome, Italy. </span></li>
+                        <li><span class="citation-text">Yang Xie, Yang Li, <strong>Manavjeet Singh*</strong>, Samir R
+                                Das, Petar M Djurić, Milutin Stanaćević, "Robust and energy-efficient channel estimation
+                                in RF backscatter tag-to-tag network," IEEE Journal of Radio Frequency Identification
+                                2025. </span></li>
+                        <li><span class="citation-text">Anshak Goel*, Deeptorshi Mondal*, <strong>Manavjeet
+                                    Singh*</strong>, Sahil Goyal, Navneet Aggarwal, Jian Xu, Mukulika Maity, Arani
+                                Bhattacharya, "FlexDisplay: An optimized smartphone display framework to conserve
+                                battery power," ACM J. Comput. Sustain. Soc., Jul. 2025. </span></li>
+                        <li><span class="citation-text">Bryan Bo Cao, Abhinav Sharma, <strong>Manavjeet Singh</strong>,
+                                et al., "Representation Similarity: A Better Guidance of DNN Layer Sharing for Edge
+                                Computing without Training," ACM International Conference on Mobile Computing and
+                                Networking, S3 Workshop 2024, Washington, DC, USA. </span></li>
+                        <li><span class="citation-text">Anshak Goel, Deeptorshi Mondal, <strong>Manavjeet
+                                    Singh</strong>, Sahil Goyal, Navneet Aggarwal, Jian Xu, Mukulika Maity, Arani
+                                Bhattacharya, "FlexDisplay: A Flexible Display Framework To Conserve Smartphone Battery
+                                Power," IEEE International Conference on Pervasive Computing and Communications
+                                Workshops and other Affiliated Events (PerCom Workshops) 2024, Biarritz, France. </span>
+                        </li>
 
-        <section id="publications" class="content-section">
-            <div class="container">
-                <h2>Selected Publications</h2>
-                <ul>
-                    <li><a href="papers/ovida.pdf" class="pdf-link">[PDF]</a><span class="citation-text"><strong>Manavjeet Singh</strong>, et al., "OVIDA: Orchestrator for Video Analytics on Disaggregated Architecture," To Appear in 2024 IEEE/ACM Symposium on Edge Computing (SEC), Rome, Italy, 2024. </span></li>
-                    <li><span class="citation-text">Abeer Ahmad, <strong>Manavjeet Singh</strong>, et al., "Improving Communication Performance of Passive Backscattering Tags Using Collaborative Backscatter," 2025 IEEE International Conference on RFID (RFID), Atlanta, GA, USA, 2025. </span></li>
-                    <li><span class="citation-text">Bryan Bo Cao, Abhinav Sharma, <strong>Manavjeet Singh</strong>, et al., "Representation Similarity: A Better Guidance of DNN Layer Sharing for Edge Computing without Training," To Appear In Proceedings of the 15th ACM Wireless of the Students, by the Students, and for the Students (S3) Workshop (S3 '24). </span></li>
-                    <li><span class="citation-text">Anshak Goel*, Deeptorshi Mondal*, <strong>Manavjeet Singh*</strong>, et al., "FlexDisplay: An optimized smartphone display framework to conserve battery power," ACM J. Comput. Sustain. Soc., Jul. 2025. </span></li>
-                </ul>
+                    </ul>
+                </section>
             </div>
-        </section>
-
-        <section id="contact" class="content-section">
-            <div class="container">
-                <h2>Contact</h2>
-                <div class="contact-info">
-                    <p>Email: manavsingh at cs.stonybrook.edu</p>
-                    <p><a href="https://linkedin.com/in/manavjeet-singh" class="linkedin-link">LinkedIn: linkedin.com/in/manavjeet-singh</a></p>
-                    <p><a href="https://scholar.google.com/citations?user=PiBb_OMAAAAJ&hl=en" class="google-scholar-link">Google Scholar</a></p>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <footer class="site-footer">
@@ -161,4 +173,5 @@
         </div>
     </footer>
 </body>
+
 </html>
