@@ -70,6 +70,9 @@ a:hover { color: var(--accent-hover); }
     background: #0f172a;
     border-bottom: none;
     padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .site-header .container {
