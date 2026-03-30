@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(du -sh /Users/manavjeet/git/manavjeetsingh.github.io/photography/*.jpg)",
+      "Read(//Users/manavjeet/git/manavjeetsingh.github.io/**)",
+      "Bash(du -sh /Users/manavjeet/git/manavjeetsingh.github.io/photography/thumbs/*.jpg)"
+    ]
+  }
+}
