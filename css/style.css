@@ -371,6 +371,13 @@ a:hover { color: var(--accent-hover); }
     border-top: 1px solid var(--border);
 }
 
+.pdf-link-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
 .pdf-link {
     display: inline-block;
     font-size: 0.72rem;
@@ -393,6 +400,20 @@ a:hover { color: var(--accent-hover); }
 
 .citation-text { color: var(--text-muted); }
 .citation-text strong { color: var(--text); font-weight: 600; }
+
+.award-badge {
+    display: block;
+    width: fit-content;
+    margin-top: 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #7a4a00;
+    background: #fff3cd;
+    border: 1px solid #ffe08a;
+    padding: 3px 8px;
+    border-radius: 5px;
+    letter-spacing: 0.01em;
+}
 
 /* === FOOTER === */
 .site-footer {
